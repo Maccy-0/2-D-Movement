@@ -1695,6 +1695,10 @@ MonoBehaviour:
   playerSpeed: 1.5
   acceleration: 3
   player: {fileID: 1433354318}
+  apexHeight: 4
+  apexTime: 1
+  terminalSpeed: 2
+  coyoteTime: 0.5
 --- !u!4 &1433354315
 Transform:
   m_ObjectHideFlags: 0
@@ -1770,8 +1774,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_AngularDrag: 0
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

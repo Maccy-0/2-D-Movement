@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,6 +9,13 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D player;
     float y1;
     float y2;
+    public float apexHeight;
+    public float apexTime;
+    bool isGrounded;
+    bool isGroundedC;
+    public float terminalSpeed;
+    public float coyoteTime;
+    float coyoteTimeSpent;
 
     public enum FacingDirection
     {
@@ -32,8 +41,44 @@ public class PlayerController : MonoBehaviour
     private void MovementUpdate(Vector2 playerInput)
     {
         player.velocity = playerInput * playerSpeed;
-    }
+        if (Physics2D.Raycast(transform.position + new Vector3(0, -0.6f), Vector3.down, 0.1f))
+        {
+            coyoteTimeSpent = coyoteTime;
+            isGroundedC = true;
+        }
+        else
+        {
+            coyoteTimeSpent -= Time.deltaTime;
+            if (coyoteTimeSpent < 0)
+            {
+                isGroundedC = false;
+            }
+        }
+        Debug.Log(coyoteTimeSpent);
+        if (Input.GetKeyDown("w") && isGroundedC)
+        {
+            StartCoroutine("Jump");
+        }
 
+        if (player.velocity.y < -terminalSpeed)
+        {
+            player.velocity = new Vector2(player.velocity.x, -terminalSpeed);
+        }
+        Debug.Log(player.velocity);
+    }
+    private IEnumerator Jump ()
+    {
+        GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+        float i = 0;
+        while (i < apexTime){
+            player.velocity += new Vector2(0, apexHeight/apexTime);
+            yield return new WaitForEndOfFrame();
+            i += Time.deltaTime;
+
+        }
+        GetComponent<Rigidbody2D>().gravityScale = 10.0f;
+        yield return null;
+    }
     public bool IsWalking()
     {
         if (Input.GetAxis("Horizontal") == 0)
@@ -47,7 +92,8 @@ public class PlayerController : MonoBehaviour
     }
     public bool IsGrounded()
     {
-        return Physics2D.Raycast(transform.position + new Vector3(0,-0.6f), Vector3.down, 0.1f);
+        isGrounded = Physics2D.Raycast(transform.position + new Vector3(0,-0.6f), Vector3.down, 0.1f);
+        return isGrounded;
     }
 
     public FacingDirection GetFacingDirection()
