@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public float terminalSpeed;
     public float coyoteTime;
     float coyoteTimeSpent;
+    public float gravity;
+    bool dying;
 
     public enum FacingDirection
     {
@@ -25,7 +27,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<Rigidbody2D>().gravityScale = gravity;
+        dying = false;
     }
 
     // Update is called once per frame
@@ -36,11 +39,22 @@ public class PlayerController : MonoBehaviour
         // manage the actual movement of the character.
         Vector2 playerInput = new Vector2(Input.GetAxis("Horizontal") * acceleration, 0);
         MovementUpdate(playerInput);
+
+        
+        if (Input.GetKeyDown("x") && isGroundedC)
+        {
+            dying = true;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     private void MovementUpdate(Vector2 playerInput)
     {
-        player.velocity = playerInput * playerSpeed;
+        player.velocity = playerInput * playerSpeed * Time.deltaTime;
         if (Physics2D.Raycast(transform.position + new Vector3(0, -0.6f), Vector3.down, 0.1f))
         {
             coyoteTimeSpent = coyoteTime;
@@ -76,7 +90,7 @@ public class PlayerController : MonoBehaviour
             i += Time.deltaTime;
 
         }
-        GetComponent<Rigidbody2D>().gravityScale = 10.0f;
+        GetComponent<Rigidbody2D>().gravityScale = gravity;
         yield return null;
     }
     public bool IsWalking()
@@ -108,5 +122,24 @@ public class PlayerController : MonoBehaviour
         }
         //I wish this could be null
         return FacingDirection.right;
+    }
+
+    public bool IsDying()
+    {
+        if (dying)
+        {
+            OnDyingAnimationComplete();
+            return true;
+            
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    void OnDyingAnimationComplete()
+    {
+        gameObject.SetActive(false);
     }
 }

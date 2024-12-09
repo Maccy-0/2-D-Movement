@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 87f14ff9617bc0145b04ce03190047be
+guid: fdcf6c981979f454388c1a4756c70f6b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,165 +93,194 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shovelknight-spritesheet_0
+      name: digwarrior-supplement_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 31
-        width: 33
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 185
+        y: 385
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4581ba8be93eb94f95ea74d7259722e
-      internalID: 444663372
+      spriteID: acd40a8299faf0b4583a05e86a96dc44
+      internalID: -1578855692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shovelknight-spritesheet_1
+      name: digwarrior-supplement_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 32
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 247
+        y: 385
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d223bb944268a9046a9af414d8e0bb6b
-      internalID: -660832402
+      spriteID: 6b1e0ddd4c8fc514da39ff4c2a194ddc
+      internalID: 1218789553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shovelknight-spritesheet_2
+      name: digwarrior-supplement_2
       rect:
         serializedVersion: 2
-        x: 81
-        y: 28
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 311
+        y: 385
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ff425808450634bb0c50c1578d19de
-      internalID: -243229326
+      spriteID: 9cb1ccc1ec9cf6b479437e0d0c450595
+      internalID: 198265800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shovelknight-spritesheet_3
+      name: digwarrior-supplement_3
       rect:
         serializedVersion: 2
-        x: 20
-        y: 4
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 373
+        y: 385
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b88ca3f368b9b94e98a0700713a7d8f
-      internalID: -1561923063
+      spriteID: 122d2abc1375a044091e7518a6253d05
+      internalID: -488722266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shovelknight-spritesheet_4
+      name: digwarrior-supplement_4
       rect:
         serializedVersion: 2
-        x: 41
-        y: 4
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 183
+        y: 259
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f9004bce50275e43b40d56df28bb478
-      internalID: -440886849
+      spriteID: 78c663fd0d4741f40af75648afbae58f
+      internalID: -1113029607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shovelknight-spritesheet_5
+      name: digwarrior-supplement_5
       rect:
         serializedVersion: 2
-        x: 62
-        y: 4
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 248
+        y: 255
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf256a8748e44504591d16748c8c8b4c
-      internalID: -1510024623
+      spriteID: 133882cade5ab9f45a52cf7d6aee2057
+      internalID: -101331497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shovelknight-spritesheet_6
+      name: digwarrior-supplement_6
       rect:
         serializedVersion: 2
-        x: 85
-        y: 4
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 261
+        width: 53
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 944e247d5c42caf47bfc0dca9aa61444
-      internalID: 724438514
+      spriteID: 8f8f91e36a0d3b6499078be814a21fb6
+      internalID: 1422584434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: digwarrior-supplement_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 265
+        width: 53
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15f36bd7c6d6824e9f4f72a048636fa
+      internalID: -1439097042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: digwarrior-supplement_8
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 272
+        width: 62
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa685613543a87d4e9ef72c27fef0dce
+      internalID: 1260465942
       vertices: []
       indices: 
       edges: []
@@ -267,13 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      shovelknight-spritesheet_0: 444663372
-      shovelknight-spritesheet_1: -660832402
-      shovelknight-spritesheet_2: -243229326
-      shovelknight-spritesheet_3: -1561923063
-      shovelknight-spritesheet_4: -440886849
-      shovelknight-spritesheet_5: -1510024623
-      shovelknight-spritesheet_6: 724438514
+      digwarrior-supplement_0: -1578855692
+      digwarrior-supplement_1: 1218789553
+      digwarrior-supplement_2: 198265800
+      digwarrior-supplement_3: -488722266
+      digwarrior-supplement_4: -1113029607
+      digwarrior-supplement_5: -101331497
+      digwarrior-supplement_6: 1422584434
+      digwarrior-supplement_7: -1439097042
+      digwarrior-supplement_8: 1260465942
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

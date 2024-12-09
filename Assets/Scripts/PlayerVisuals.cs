@@ -8,11 +8,13 @@ public class PlayerVisuals : MonoBehaviour
 
     private readonly int isWalkingHash = Animator.StringToHash("IsWalking");
     private readonly int isGroundedHash = Animator.StringToHash("IsGrounded");
+    private readonly int isDyingHash = Animator.StringToHash("IsDying");
 
     void Update()
     {
         animator.SetBool(isWalkingHash, playerController.IsWalking());
         animator.SetBool(isGroundedHash, playerController.IsGrounded());
+        animator.SetBool(isGroundedHash, playerController.IsDying());
 
         switch (playerController.GetFacingDirection())
         {
